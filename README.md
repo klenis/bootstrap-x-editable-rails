@@ -1,8 +1,8 @@
-# X-editable for Rails asset pipeline
+# X-editable 1.4.0 for Rails 
 
 [X-editable](https://github.com/vitalets/x-editable) is an in-place editing plugin with support for Twitter Bootstrap, jQuery UI or pure jQuery.
 
-The `bootstrap-x-editable-rails` gem integrates `X-editable` with the Rails asset pipeline. This gem only supports the Bootstrap part of X-editable.
+The `bootstrap-x-editable-rails` gem integrates `X-editable` with Rails asset pipeline. This gem only supports the Bootstrap part of X-editable.
 
 ## Usage
 
@@ -31,3 +31,14 @@ Add to your `app/assets/javascripts/application.js`
 Add to your `app/assets/stylesheets/application.css`
 
     *= require bootstrap-editable
+
+## Updating the gem
+There are two rake tasks designed to ease the maintenance of this gem.
+
+The `update` task pulls the latest X-editable code from github and places images, stylesheets and javascripts in the correct gem paths. It also changes background-image properties in the stylesheet to asset pipeline equivalents.
+
+	rake update
+	
+The `build` task is a simple wrapper for `gem build`
+	
+	rake build
