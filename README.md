@@ -1,4 +1,4 @@
-# X-editable 1.4.1 for Rails 
+# X-editable 1.4.3 for Rails 
 
 [X-editable](https://github.com/vitalets/x-editable) is an in-place editing plugin with support for Twitter Bootstrap, jQuery UI or pure jQuery.
 
