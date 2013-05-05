@@ -1,4 +1,4 @@
-# X-editable 1.4.3 for Rails 
+# X-editable for Rails [![Gem Version](https://badge.fury.io/rb/bootstrap-x-editable-rails.png)](http://badge.fury.io/rb/bootstrap-x-editable-rails)
 
 [X-editable](https://github.com/vitalets/x-editable) is an in-place editing plugin with support for Twitter Bootstrap, jQuery UI or pure jQuery.
 
