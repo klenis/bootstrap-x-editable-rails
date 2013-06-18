@@ -18,13 +18,8 @@ Then run `bundle install`
 
 Add to your `app/assets/javascripts/application.js`
 
-#### Popup version
-
     //= require bootstrap-editable
 
-#### Inline version
-
-    //= require bootstrap-editable-inline
 
 ### Include X-editable stylesheet
 
