@@ -9,10 +9,10 @@ task :update do
   system("cd #{src_path} && npm install")
   system("cd #{src_path} && grunt build")
 
-  system("cp #{dist_path}/img/clear.png vendor/assets/images/")
-  system("cp #{dist_path}/img/loading.gif vendor/assets/images/")
-  system("cp #{dist_path}/css/bootstrap-editable.css vendor/assets/stylesheets/bootstrap-editable.scss")
-  system("cp #{dist_path}/js/bootstrap-editable.js vendor/assets/javascripts/")
+  system("cp #{dist_path}/img/clear.png app/assets/images/")
+  system("cp #{dist_path}/img/loading.gif app/assets/images/")
+  system("cp #{dist_path}/css/bootstrap-editable.css app/assets/stylesheets/bootstrap-editable.scss")
+  system("cp #{dist_path}/js/bootstrap-editable.js app/assets/javascripts/")
 
   fixes
 
@@ -20,8 +20,8 @@ task :update do
 end
 
 def fixes
-  replace_string_in_file("vendor/assets/stylesheets/bootstrap-editable.scss", "url('../img/loading.gif')", "image-url('loading.gif')")
-  replace_string_in_file("vendor/assets/stylesheets/bootstrap-editable.scss", "url('../img/clear.png')", "image-url('clear.png')")
+  replace_string_in_file("app/assets/stylesheets/bootstrap-editable.scss", "url('../img/loading.gif')", "image-url('loading.gif')")
+  replace_string_in_file("app/assets/stylesheets/bootstrap-editable.scss", "url('../img/clear.png')", "image-url('clear.png')")
 end
 
 def replace_string_in_file(file, find, replace)
