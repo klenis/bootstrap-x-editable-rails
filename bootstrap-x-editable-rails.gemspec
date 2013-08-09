@@ -13,6 +13,8 @@ Gem::Specification.new do |gem|
   gem.files         = `git ls-files`.split("\n")
   gem.version       = BootstrapXEditableRails::Rails::VERSION
 
+  gem.license       = "MIT"
+
   gem.add_dependency "railties", ">= 3.0"
   gem.add_development_dependency "bundler", ">= 1.0"
   gem.add_development_dependency "rake"
