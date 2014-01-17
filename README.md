@@ -14,18 +14,29 @@ Include `bootstrap-x-editable-rails` in Gemfile
 
 Then run `bundle install`
 
-### Include X-editable javascript
+### Include X-editable for Boostrap 2
 
 Add to your `app/assets/javascripts/application.js`
 
-    //= require bootstrap-editable
-
-
-### Include X-editable stylesheet
-
+    //= require bootstrap-editable/bootstrap-editable
+    
+    
 Add to your `app/assets/stylesheets/application.css`
 
-    *= require bootstrap-editable
+    *= require bootstrap-editable/bootstrap-editable
+
+
+### Include X-editable for Boostrap 3
+
+Add to your `app/assets/javascripts/application.js`
+
+    //= require bootstrap3-editable/bootstrap-editable
+    
+    
+Add to your `app/assets/stylesheets/application.css`
+
+    *= require bootstrap3-editable/bootstrap-editable
+
 
 ## Updating the gem
 There are two rake tasks designed to ease the maintenance of this gem.
