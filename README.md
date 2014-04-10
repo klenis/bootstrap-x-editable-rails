@@ -4,6 +4,11 @@
 
 The `bootstrap-x-editable-rails` gem integrates `X-editable` with Rails asset pipeline. This gem only supports the Bootstrap part of X-editable.
 
+## Example application
+There is a small Rails project showing how to use this gem.
+
+https://github.com/klenis/bootstrap-x-editable-rails-demo
+
 ## Usage
 
 ### Install bootstrap-x-editable-rails gem
