@@ -2905,6 +2905,7 @@ $(function(){
            this.renderClear();
            this.setClass();
            this.setAttr('placeholder');
+	   this.setAttr('maxlength');
         },
         
         activate: function() {
@@ -3002,7 +3003,16 @@ $(function(){
         @type boolean
         @default true        
         **/
-        clear: true
+        clear: true,
+
+	/**
+ 	Maxlength attribute of input.
+
+   	@property maxlength
+    	@type number
+     	@default null
+  	**/
+        maxlength: null
     });
 
     $.fn.editabletypes.text = Text;
