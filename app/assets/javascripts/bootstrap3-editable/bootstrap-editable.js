@@ -2905,6 +2905,7 @@ $(function(){
            this.renderClear();
            this.setClass();
            this.setAttr('placeholder');
+	   this.setAttr('maxlength');
         },
         
         activate: function() {
@@ -3002,7 +3003,16 @@ $(function(){
         @type boolean
         @default true        
         **/
-        clear: true
+        clear: true,
+
+	/**
+ 	Maxlength attribute of input.
+
+   	@property maxlength
+    	@type number
+     	@default null
+  	**/
+        maxlength: null
     });
 
     $.fn.editabletypes.text = Text;
@@ -4906,7 +4916,11 @@ Editableform based on Twitter Bootstrap 3
             }
 
 
-            var calculatedOffset = this.getCalculatedOffset(placement, pos, actualWidth, actualHeight);
+            // var calculatedOffset = this.getCalculatedOffset(placement, pos, actualWidth, actualHeight);
+            var calculatedOffset = placement == 'bottom' ? { top: pos.top + pos.height, left: pos.left + pos.width / 2 - actualWidth / 2 } :
+placement == 'top' ? { top: pos.top - actualHeight, left: pos.left + pos.width / 2 - actualWidth / 2 } :
+placement == 'left' ? { top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left - actualWidth } :
+/* placement == 'right' */ { top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left + pos.width };
 
             this.applyPlacement(calculatedOffset, placement);            
                      
